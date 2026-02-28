@@ -24,6 +24,7 @@ X_scaled = scaler.fit_transform(X)
 
 ## 유사도 r_ij
 kNN 이웃일 때만 cosine similarity  
+![](images/cosine_similarity.png)
 rᵢⱼ = (1 + cosine(xᵢ, xⱼ)) / 2  
 ```python
 from sklearn.preprocessing import StandardScaler
