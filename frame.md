@@ -10,6 +10,10 @@ kNN 거리 기반 정의
 ## 유사도 r_ij
 kNN 이웃일 때만 cosine similarity
 
+## 선택비용 γ
+γ를 일단 s_i의 median 값으로 설정하고,  
+sweep을 통해 최적의 γ 찾음
+
 ## QUBO 변환
 Diagonal:
 Q_ii = γ − α s_i + λ(1−2k)
