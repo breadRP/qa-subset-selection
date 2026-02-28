@@ -32,6 +32,6 @@ Q_ii = γ − α s_i
 Off-diagonal:
 Q_ij = β r_ij  
 
-
+  
 ## 파이프라인
 데이터 → s → R → Q → solver → subset
