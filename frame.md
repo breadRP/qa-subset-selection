@@ -12,9 +12,10 @@ min-max 정규화
 kNN 이웃일 때만 cosine similarity  
 rᵢⱼ = (1 + cosine(xᵢ, xⱼ)) / 2  
 ```python
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import StandardScaler
 
-R = cosine_similarity(X)
+X_scaled = StandardScaler().fit_transform(X) // 정규화 필요
+R = cosine_similarity(X_scaled)
 ```
 ​
 ## 선택비용 γ
