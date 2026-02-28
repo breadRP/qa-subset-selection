@@ -12,7 +12,7 @@ f(x) = 선택비용 - 데이터 중요도 + 중복성
 ![](images/최종목적.png)
 
 ## 중요도 s_i
-kNN 거리 기반 정의  
+kNN 거리 기반 정의 (거리가 멀수록 전혀 다른 데이터라고 유추, 학습에 영향큼) 
 min-max 정규화  
 ```python
 from sklearn.preprocessing import MinMaxScaler
