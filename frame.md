@@ -5,10 +5,12 @@ f(x) = γΣx_i − αΣs_i x_i + βΣr_ij x_i x_j
 f(x) = 선택비용 - 데이터 중요도 + 중복성
 
 ## 중요도 s_i
-kNN 거리 기반 정의
+kNN 거리 기반 정의  
+min-max 정규화
 
 ## 유사도 r_ij
 kNN 이웃일 때만 cosine similarity
+rij​=21+cosine 으로 정규​
 
 ## 선택비용 γ
 γ를 일단 s_i의 median 값으로 설정하고,  
