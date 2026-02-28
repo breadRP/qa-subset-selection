@@ -14,7 +14,7 @@ rᵢⱼ = (1 + cosine(xᵢ, xⱼ)) / 2
 ```python
 from sklearn.preprocessing import StandardScaler
 
-X_scaled = StandardScaler().fit_transform(X) // 정규화 필요
+X_scaled = StandardScaler().fit_transform(X) // feature간 정규화 필요
 R = cosine_similarity(X_scaled)
 ```
 ​
