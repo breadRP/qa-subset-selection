@@ -8,6 +8,12 @@ f(x) = 선택비용 - 데이터 중요도 + 중복성
 ## 중요도 s_i
 kNN 거리 기반 정의  
 min-max 정규화  
+```python
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+X_scaled = scaler.fit_transform(X)
+```
 
 
 ## 유사도 r_ij
