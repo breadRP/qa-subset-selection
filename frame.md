@@ -5,6 +5,12 @@ f(x) = γΣx_i − αΣs_i x_i + βΣr_ij x_i x_j
 f(x) = 선택비용 - 데이터 중요도 + 중복성  
 ![](images/목적함수.png)
 
+## 해밀토니안
+![](images/해밀토니안.png)
+
+## 최종목적함수
+![](images/최종목적.png)
+
 ## 중요도 s_i
 kNN 거리 기반 정의  
 min-max 정규화  
