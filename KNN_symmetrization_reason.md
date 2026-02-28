@@ -5,13 +5,7 @@
 kNN을 사용하면 각 데이터 i에 대해 k개의 이웃 집합 (N_k(i))가 생성된다.
 이를 행렬로 표현하면
 
-[
-A_{ij} =
-\begin{cases}
-1 & j \in N_k(i) \
-0 & \text{otherwise}
-\end{cases}
-]
+![](images/KNN행렬요소.png)
 
 이 행렬은 **방향 그래프(adjacency)** 이다.
 즉 일반적으로
