@@ -11,9 +11,11 @@ min-max 정규화
 ## 유사도 r_ij
 kNN 이웃일 때만 cosine similarity  
 rᵢⱼ = (1 + cosine(xᵢ, xⱼ)) / 2  
-```from sklearn.metrics.pairwise import cosine_similarity
+```python
+from sklearn.metrics.pairwise import cosine_similarity
 
-R = cosine_similarity(X)```​
+R = cosine_similarity(X)
+```​
 
 ## 선택비용 γ
 γ를 일단 s_i의 median 값으로 설정하고,  
