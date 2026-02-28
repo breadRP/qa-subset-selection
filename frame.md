@@ -9,7 +9,7 @@ kNN 거리 기반 정의
 min-max 정규화
 
 ## 유사도 r_ij
-kNN 이웃일 때만 cosine similarity
+kNN 이웃일 때만 cosine similarity  
 rᵢⱼ = (1 + cosine(xᵢ, xⱼ)) / 2​
 
 ## 선택비용 γ
