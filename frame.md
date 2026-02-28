@@ -24,7 +24,15 @@ X_scaled = scaler.fit_transform(X)
 
 ## 유사도 r_ij
 kNN 이웃일 때만 cosine similarity  
-![](images/cosine_similarity.png)
+![](images/cosine_similarity.png)  
+KNN은 비대칭 특성이므로 i→j 관계 또는 j→i 관계 있으면 similarity 계산
+아니면 0인 식으로 대칭  
+kNN은 원래 이렇게 동작함:
+
+i의 이웃 j
+≠
+j의 이웃 i  
+
 rᵢⱼ = (1 + cosine(xᵢ, xⱼ)) / 2  
 ```python
 from sklearn.preprocessing import StandardScaler
