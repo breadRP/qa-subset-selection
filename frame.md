@@ -16,10 +16,10 @@ sweep을 통해 최적의 γ 찾음
 
 ## QUBO 변환
 Diagonal:
-Q_ii = γ − α s_i + λ(1−2k)
+Q_ii = γ − α s_i
 
 Off-diagonal:
-Q_ij = β r_ij + 2λ
+Q_ij = β r_ij
 
 ## 파이프라인
 데이터 → s → R → Q → solver → subset
