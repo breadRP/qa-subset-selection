@@ -10,7 +10,9 @@ min-max 정규화
 
 ## 유사도 r_ij
 kNN 이웃일 때만 cosine similarity
-rij​=21+cosine 으로 정규​
+\[
+r_{ij} = \frac{1 + \cos(x_i, x_j)}{2}
+\]​
 
 ## 선택비용 γ
 γ를 일단 s_i의 median 값으로 설정하고,  
