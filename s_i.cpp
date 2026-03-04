@@ -59,7 +59,7 @@ vector<double> calc_s_i(vector<vector<double>> X) // s_i를 구하는 함수 / �
         }
 
         nth_element(dist.begin(), dist.begin()+k-1, dist.end()); // k번째 이웃 거리 구하기
-        s_i[i].push_back(dist[k-1]);
+        s_i.push_back(dist[k-1]);
     }
 
     return s_i; // i(i=0,1,2,3,...)에 대하여 각 s_i값 행렬 반환
