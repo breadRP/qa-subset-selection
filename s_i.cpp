@@ -16,6 +16,7 @@ double calc_dist(vector<double> A, vector<double> B) // 두 데이터 간의 거
     }
     
     s = sqrt(s); // 두 데이터 간 eclidean 거리
+    return s;
 }
 
 vector<double> calc_s_i(vector<vector<double>> X) // s_i를 구하는 함수 / 파라미터 : X:데이터 행렬
