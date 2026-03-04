@@ -8,8 +8,15 @@
 
 따라서 데이터셋에서 **정보성이 높은 데이터 샘플을 선택하는 문제(subset selection)**는 중요한 연구 주제이다.
 
-본 연구에서는 데이터 샘플의 희귀도(rarity)를 k번째 최근접 이웃(k-nearest neighbor) 거리를 이용하여 추정하고, 이를 기반으로 중요한 데이터를 선택하는 문제를 QUBO(Quadratic Unconstrained Binary Optimization) 형태의 최적화 문제로 모델링한다.
+## 아이디어
+
+본 연구에서는 데이터 샘플의 희귀도(rarity)를 k번째 최근접 이웃(k-nearest neighbor) 거리를 이용하여 추정하고, cosine_similarity를 이용해 각 데이터 간 중복성을 추정한다. 또한 데이터 갯수의 제한조건은  이를 기반으로 중요한 데이터를 선택하는 문제를 QUBO(Quadratic Unconstrained Binary Optimization) 형태의 최적화 문제로 모델링한다.
 
 제안한 방법을 검증하기 위해, 먼저 키와 몸무게와 같은 간단한 feature로 구성된 데이터셋을 이용하여 알고리즘의 동작을 확인하고 이후 더 복잡한 데이터셋으로 확장하는 것을 목표로 한다.  
 
-##
+## 현재 진행도
+-제한조건 계수 계산 구현
+-QUBO 만들기 진행
+
+## src
+
