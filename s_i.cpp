@@ -34,12 +34,6 @@ namespace
             val = val / *max_it;
         }
     }
-<<<<<<< HEAD
-    
-    s = sqrt(s); // 두 데이터 간 eclidean 거리
-    return s;
-=======
->>>>>>> 76b4355 (update)
 }
 
 vector<double> calc_s_i(const vector<vector<double>>& X) // s_i를 구하는 함수 / 파라미터 : X:데이터 행렬
@@ -84,11 +78,7 @@ vector<double> calc_s_i(const vector<vector<double>>& X) // s_i를 구하는 함
         }
 
         nth_element(dist.begin(), dist.begin()+k-1, dist.end()); // k번째 이웃 거리 구하기
-<<<<<<< HEAD
-        s_i.push_back(dist[k-1]);
-=======
         s_i.push_back(dist[k-1]); // 정규화 하지 않은 s_i값 생성.
->>>>>>> 76b4355 (update)
     }
 
     max_normalize(s_i); // 0~1사이 값으로 정규화
