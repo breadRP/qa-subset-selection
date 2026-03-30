@@ -85,7 +85,8 @@ vector<double> calc_s_i(const vector<vector<double>>& X) // s_i를 구하는 함
     return s_i; // i(i=0,1,2,3,...)에 대하여 각 s_i값 행렬 반환
 }
 
-PYBIND11_MODULE(calc_s_i, m) {
+PYBIND11_MODULE(calc_s_i, m)
+{
     m.def("calc_s_i", &calc_s_i); // calc_s_i 함수를 Python에서 사용할 수 있도록 pybind11로 래핑
 }
 
