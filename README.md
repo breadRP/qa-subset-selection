@@ -19,8 +19,8 @@
 - baseline과 비교 준비
 
 ## 코드 구성
-src/
-├ s_i.cpp
-├ γ.cpp
+src/  
+├ s_i.cpp  
+├ γ.cpp  
 └ r_ij.py
 
